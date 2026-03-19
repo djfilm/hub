@@ -1,202 +1,284 @@
----
-layout: home
-page_id: home
-seo_title: "DJfilm — Vidéaste Professionnel à Agen | Films de Mariage & Entreprise"
-seo_description: "DJfilm, vidéaste professionnel à Agen (47). Films de mariage inoubliables, productions d'entreprise, événements et publicités en Lot-et-Garonne. Devis gratuit."
-og_image: "/assets/images/og-home.jpg"
-keywords:
-  - vidéaste Agen
-  - film mariage Agen
-  - vidéaste mariage Lot-et-Garonne
-  - vidéo entreprise Agen
-  - film d'entreprise 47
----
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJfilm — Hub</title>
+  <meta name="description" content="Djibril Diallo · Vidéaste professionnel basé à Agen — Films de mariage, productions d'entreprise, contenus audiovisuels premium.">
 
-{% assign d = site.data.home %}
-{% assign g = site.data.global %}
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://hub.djfilm.fr/">
+  <meta property="og:title"       content="DJfilm — Hub">
+  <meta property="og:description" content="Vidéaste professionnel basé à Agen. Films de mariage, productions d'entreprise, contenus audiovisuels premium.">
+  <meta property="og:image"       content="/assets/images/og-default.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:site"       content="@djfilm_agen">
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero__bg" aria-hidden="true">
-    <img
-      src="{{ d.hero.background_image | relative_url }}"
-      alt=""
-      class="hero__bg-img"
-      loading="eager"
-      fetchpriority="high"
-      width="1920"
-      height="1080"
-    >
-    <div class="hero__bg-overlay"></div>
-    <div class="hero__grain"></div>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/hub.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Djibril Diallo",
+    "jobTitle": "Vidéaste professionnel",
+    "worksFor": { "@type": "Organization", "name": "DJfilm" },
+    "url": "https://djfilm.fr",
+    "email": "contact@djfilm.fr",
+    "telephone": "+33612345678",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Agen",
+      "postalCode": "47000",
+      "addressRegion": "Lot-et-Garonne",
+      "addressCountry": "FR"
+    },
+    "sameAs": [
+      "https://instagram.com/djfilm_agen",
+      "https://vimeo.com/djfilm",
+      "https://www.linkedin.com/company/djfilm-agen",
+      "https://youtube.com/@djfilm"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <filter id="g">
+      <feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#g)"/>
+  </svg>
+
+  <!-- Animated background orbs -->
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+    <div class="orb orb--4"></div>
+    <div class="orb orb--5"></div>
   </div>
 
-  <div class="hero__inner">
-    <p class="hero__label" data-reveal>{{ d.hero.label }}</p>
-    <h1 class="hero__title" id="hero-title" data-reveal data-reveal-delay="1">{{ d.hero.title }}</h1>
-    <p class="hero__subtitle" data-reveal data-reveal-delay="2">{{ d.hero.subtitle }}</p>
-    <p class="hero__desc" data-reveal data-reveal-delay="3">{{ d.hero.description }}</p>
-    <div class="hero__actions" data-reveal data-reveal-delay="4">
-      <a href="{{ d.hero.cta_primary.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.hero.cta_primary.label }}</a>
-      <a href="{{ d.hero.cta_secondary.url | relative_url }}" class="btn btn--ghost btn--lg">{{ d.hero.cta_secondary.label }}</a>
-    </div>
-  </div>
+  <!-- ════════════════════ HUB ════════════════════ -->
+  <div class="hub-wrap">
+    <main class="hub" id="main">
 
-  <div class="hero__scroll" aria-hidden="true">
-    <div class="hero__scroll-line"></div>
-  </div>
-</section>
+      <!-- ── Profile ── -->
+      <header class="profile" data-reveal data-delay="0">
 
-<!-- ============================================================
-     INTRO — Présentation
-     ============================================================ -->
-<section class="section-intro section" aria-labelledby="intro-title">
-  <div class="container">
-    <div class="intro-grid">
-      <div class="intro-content">
-        <p class="section-label" data-reveal>{{ d.intro.label }}</p>
-        <h2 class="section-title" id="intro-title" data-reveal data-reveal-delay="1">{{ d.intro.title }}</h2>
-        <p class="intro-text" data-reveal data-reveal-delay="2">{{ d.intro.text }}</p>
-        <p class="intro-text" data-reveal data-reveal-delay="3">{{ d.intro.text_secondary }}</p>
-        <div data-reveal data-reveal-delay="4">
-          <a href="{{ d.intro.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.intro.cta.label }}</a>
+        <div class="profile__avatar" aria-hidden="true">
+          <div class="profile__inner">
+            <div class="profile__logo-text">
+              <strong>DJ</strong>
+              <span>film</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="intro-image-wrap" data-reveal data-reveal-delay="2">
-        <img
-          src="{{ d.intro.image | relative_url }}"
-          alt="{{ d.intro.image_alt }}"
-          class="intro-image"
-          loading="lazy"
-          decoding="async"
-          width="600"
-          height="800"
-        >
-        <div class="intro-image-frame" aria-hidden="true"></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============================================================
-     SERVICES — Aperçu
-     ============================================================ -->
-<section class="section-services-preview section" aria-labelledby="services-preview-title">
-  <div class="container">
-    <div class="services-preview-header">
-      <div>
-        <p class="section-label" data-reveal>{{ d.services_preview.label }}</p>
-        <h2 class="section-title" id="services-preview-title" data-reveal data-reveal-delay="1">{{ d.services_preview.title }}</h2>
-        <p class="section-subtitle" data-reveal data-reveal-delay="2">{{ d.services_preview.subtitle }}</p>
-      </div>
-      <div data-reveal data-reveal-delay="3">
-        <a href="{{ d.services_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.services_preview.cta.label }}</a>
-      </div>
-    </div>
+        <h1 class="profile__name">DJfilm</h1>
+        <p class="profile__tagline"><em>L'Art de Filmer Votre Histoire</em></p>
 
-    <div class="services-preview-grid">
-      {% for item in d.services_preview.items %}
-      <article class="service-preview-card" data-reveal data-reveal-delay="{{ forloop.index }}">
-        <h3 class="service-preview-card__title">{{ item.title }}</h3>
-        <p class="service-preview-card__desc">{{ item.description }}</p>
-        <a href="{{ item.url | relative_url }}" class="service-preview-card__link">
-          En savoir plus
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <div class="profile__location">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <span>Agen, Lot-et-Garonne</span>
+        </div>
+
+      </header>
+
+      <!-- ── Links ── -->
+      <nav class="links" aria-label="Liens principaux">
+
+        <!-- Site principal — lien vedette -->
+        <a href="https://djfilm.fr"
+           class="link-card link-card--featured"
+           data-reveal data-delay="120"
+           target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </span>
+          <span class="link-card__body">
+            <span class="link-card__title">Site Principal</span>
+            <span class="link-card__sub">Portfolio & Services vidéo</span>
+          </span>
+          <span class="link-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+            </svg>
+          </span>
         </a>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
 
-<!-- ============================================================
-     PORTFOLIO — Réalisations en vedette
-     ============================================================ -->
-{% assign portfolio = site.data.portfolio %}
-{% assign featured_projects = portfolio.projects | where: "featured", true %}
-<section class="section-portfolio-preview section" aria-labelledby="portfolio-preview-title">
-  <div class="container">
-    <div class="portfolio-preview-header">
-      <div>
-        <p class="section-label" data-reveal>{{ d.portfolio_preview.label }}</p>
-        <h2 class="section-title" id="portfolio-preview-title" data-reveal data-reveal-delay="1">{{ d.portfolio_preview.title }}</h2>
-        <p class="section-subtitle" data-reveal data-reveal-delay="2">{{ d.portfolio_preview.subtitle }}</p>
+        <!-- Showreel Vimeo -->
+        <a href="https://vimeo.com/djfilm"
+           class="link-card"
+           data-reveal data-delay="200"
+           target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+            </svg>
+          </span>
+          <span class="link-card__body">
+            <span class="link-card__title">Showreel & Portfolio</span>
+            <span class="link-card__sub">Mes réalisations sur Vimeo</span>
+          </span>
+          <span class="link-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Devis -->
+        <a href="https://djfilm.fr/contact/"
+           class="link-card"
+           data-reveal data-delay="280"
+           target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+          </span>
+          <span class="link-card__body">
+            <span class="link-card__title">Devis Gratuit</span>
+            <span class="link-card__sub">Parlez-moi de votre projet</span>
+          </span>
+          <span class="link-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:contact@djfilm.fr"
+           class="link-card"
+           data-reveal data-delay="360">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </span>
+          <span class="link-card__body">
+            <span class="link-card__title">Envoyer un message</span>
+            <span class="link-card__sub">contact@djfilm.fr</span>
+          </span>
+          <span class="link-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Phone -->
+        <a href="tel:+33612345678"
+           class="link-card"
+           data-reveal data-delay="440">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </span>
+          <span class="link-card__body">
+            <span class="link-card__title">Téléphoner</span>
+            <span class="link-card__sub">06 12 34 56 78 · Lun–Ven, 9h–19h</span>
+          </span>
+          <span class="link-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- vCard — style distinct -->
+        <a href="/djfilm.vcf"
+           class="link-card link-card--vcard"
+           data-reveal data-delay="520"
+           download="DJfilm.vcf">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </span>
+          <span class="link-card__body">
+            <span class="link-card__title">Enregistrer le contact</span>
+            <span class="link-card__sub">Ajouter à mon carnet d'adresses</span>
+          </span>
+          <span class="link-card__badge">vCard</span>
+        </a>
+
+      </nav>
+
+      <!-- ── Divider réseaux ── -->
+      <div class="divider" data-reveal data-delay="580" aria-hidden="true">Réseaux</div>
+
+      <!-- ── Socials ── -->
+      <div class="socials" data-reveal data-delay="640" role="list" aria-label="Réseaux sociaux">
+
+        <a href="https://instagram.com/djfilm_agen"
+           class="social social--instagram"
+           target="_blank" rel="noopener noreferrer"
+           role="listitem" aria-label="Instagram — @djfilm_agen">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+
+        <a href="https://vimeo.com/djfilm"
+           class="social"
+           target="_blank" rel="noopener noreferrer"
+           role="listitem" aria-label="Vimeo — djfilm">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.48 4.807z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/company/djfilm-agen"
+           class="social"
+           target="_blank" rel="noopener noreferrer"
+           role="listitem" aria-label="LinkedIn — DJfilm">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+
+        <a href="https://youtube.com/@djfilm"
+           class="social"
+           target="_blank" rel="noopener noreferrer"
+           role="listitem" aria-label="YouTube — @djfilm">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+
       </div>
-      <div data-reveal data-reveal-delay="3">
-        <a href="{{ d.portfolio_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.portfolio_preview.cta.label }}</a>
-      </div>
-    </div>
 
-    <div class="portfolio-featured-grid" data-reveal>
-      {% for project in featured_projects limit: 4 %}
-        {% include components/portfolio-card.html project=project %}
-      {% endfor %}
-    </div>
+      <!-- ── Footer ── -->
+      <footer class="hub-footer" data-reveal data-delay="720">
+        <p>© 2025 DJfilm · Agen, Lot-et-Garonne</p>
+        <p>Vidéaste professionnel</p>
+      </footer>
+
+    </main>
   </div>
-</section>
 
-<!-- ============================================================
-     VALEURS — Mon approche
-     ============================================================ -->
-<section class="section-values section" aria-labelledby="values-title">
-  <div class="container">
-    <p class="section-label" data-reveal>{{ d.values.label }}</p>
-    <h2 class="section-title" id="values-title" data-reveal data-reveal-delay="1">{{ d.values.title }}</h2>
-    <div class="values-grid">
-      {% for item in d.values.items %}
-      <div class="value-item" data-reveal data-reveal-delay="{{ forloop.index }}">
-        <div class="value-item__number" aria-hidden="true">{{ item.number }}</div>
-        <h3 class="value-item__title">{{ item.title }}</h3>
-        <p class="value-item__text">{{ item.text }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     STATS
-     ============================================================ -->
-<section class="section-stats section--sm" aria-label="Chiffres clés">
-  <div class="container">
-    <div class="stats-grid">
-      {% for stat in d.stats.items %}
-      <div class="stat-item" data-reveal data-reveal-delay="{{ forloop.index }}">
-        <span class="stat-item__value">{{ stat.value }}</span>
-        <span class="stat-item__label">{{ stat.label }}</span>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     TÉMOIGNAGES — Aperçu
-     ============================================================ -->
-{% assign testimonials = site.data.testimonials %}
-{% assign featured_testimonials = testimonials.testimonials | where: "featured", true %}
-<section class="section-testimonials-preview section" aria-labelledby="testimonials-preview-title">
-  <div class="container">
-    <p class="section-label text-center" data-reveal>{{ d.testimonial_preview.label }}</p>
-    <h2 class="section-title text-center" id="testimonials-preview-title" data-reveal data-reveal-delay="1">{{ d.testimonial_preview.title }}</h2>
-
-    <div class="testimonials-preview-grid">
-      {% for t in featured_testimonials limit: 3 %}
-      <div data-reveal data-reveal-delay="{{ forloop.index }}">
-        {% include components/testimonial-card.html testimonial=t short=true %}
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="text-center" style="margin-top: 3rem;" data-reveal>
-      <a href="{{ d.testimonial_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.testimonial_preview.cta.label }}</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     CTA BANNER
-     ============================================================ -->
-{% include components/cta-banner.html data=d.cta_banner %}
+  <script src="/assets/js/hub.js"></script>
+</body>
+</html>

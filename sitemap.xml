@@ -1,3 +1,8 @@
-# Ce fichier est intentionnellement vide.
-# Le sitemap est généré automatiquement par le plugin jekyll-sitemap.
-# Ce fichier source est exclu du build via _config.yml > exclude.
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hub.djfilm.fr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
