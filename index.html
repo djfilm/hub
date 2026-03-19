@@ -1,0 +1,202 @@
+---
+layout: home
+page_id: home
+seo_title: "DJfilm — Vidéaste Professionnel à Agen | Films de Mariage & Entreprise"
+seo_description: "DJfilm, vidéaste professionnel à Agen (47). Films de mariage inoubliables, productions d'entreprise, événements et publicités en Lot-et-Garonne. Devis gratuit."
+og_image: "/assets/images/og-home.jpg"
+keywords:
+  - vidéaste Agen
+  - film mariage Agen
+  - vidéaste mariage Lot-et-Garonne
+  - vidéo entreprise Agen
+  - film d'entreprise 47
+---
+
+{% assign d = site.data.home %}
+{% assign g = site.data.global %}
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true">
+    <img
+      src="{{ d.hero.background_image | relative_url }}"
+      alt=""
+      class="hero__bg-img"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    >
+    <div class="hero__bg-overlay"></div>
+    <div class="hero__grain"></div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="hero__label" data-reveal>{{ d.hero.label }}</p>
+    <h1 class="hero__title" id="hero-title" data-reveal data-reveal-delay="1">{{ d.hero.title }}</h1>
+    <p class="hero__subtitle" data-reveal data-reveal-delay="2">{{ d.hero.subtitle }}</p>
+    <p class="hero__desc" data-reveal data-reveal-delay="3">{{ d.hero.description }}</p>
+    <div class="hero__actions" data-reveal data-reveal-delay="4">
+      <a href="{{ d.hero.cta_primary.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.hero.cta_primary.label }}</a>
+      <a href="{{ d.hero.cta_secondary.url | relative_url }}" class="btn btn--ghost btn--lg">{{ d.hero.cta_secondary.label }}</a>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO — Présentation
+     ============================================================ -->
+<section class="section-intro section" aria-labelledby="intro-title">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-content">
+        <p class="section-label" data-reveal>{{ d.intro.label }}</p>
+        <h2 class="section-title" id="intro-title" data-reveal data-reveal-delay="1">{{ d.intro.title }}</h2>
+        <p class="intro-text" data-reveal data-reveal-delay="2">{{ d.intro.text }}</p>
+        <p class="intro-text" data-reveal data-reveal-delay="3">{{ d.intro.text_secondary }}</p>
+        <div data-reveal data-reveal-delay="4">
+          <a href="{{ d.intro.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.intro.cta.label }}</a>
+        </div>
+      </div>
+      <div class="intro-image-wrap" data-reveal data-reveal-delay="2">
+        <img
+          src="{{ d.intro.image | relative_url }}"
+          alt="{{ d.intro.image_alt }}"
+          class="intro-image"
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="800"
+        >
+        <div class="intro-image-frame" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES — Aperçu
+     ============================================================ -->
+<section class="section-services-preview section" aria-labelledby="services-preview-title">
+  <div class="container">
+    <div class="services-preview-header">
+      <div>
+        <p class="section-label" data-reveal>{{ d.services_preview.label }}</p>
+        <h2 class="section-title" id="services-preview-title" data-reveal data-reveal-delay="1">{{ d.services_preview.title }}</h2>
+        <p class="section-subtitle" data-reveal data-reveal-delay="2">{{ d.services_preview.subtitle }}</p>
+      </div>
+      <div data-reveal data-reveal-delay="3">
+        <a href="{{ d.services_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.services_preview.cta.label }}</a>
+      </div>
+    </div>
+
+    <div class="services-preview-grid">
+      {% for item in d.services_preview.items %}
+      <article class="service-preview-card" data-reveal data-reveal-delay="{{ forloop.index }}">
+        <h3 class="service-preview-card__title">{{ item.title }}</h3>
+        <p class="service-preview-card__desc">{{ item.description }}</p>
+        <a href="{{ item.url | relative_url }}" class="service-preview-card__link">
+          En savoir plus
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO — Réalisations en vedette
+     ============================================================ -->
+{% assign portfolio = site.data.portfolio %}
+{% assign featured_projects = portfolio.projects | where: "featured", true %}
+<section class="section-portfolio-preview section" aria-labelledby="portfolio-preview-title">
+  <div class="container">
+    <div class="portfolio-preview-header">
+      <div>
+        <p class="section-label" data-reveal>{{ d.portfolio_preview.label }}</p>
+        <h2 class="section-title" id="portfolio-preview-title" data-reveal data-reveal-delay="1">{{ d.portfolio_preview.title }}</h2>
+        <p class="section-subtitle" data-reveal data-reveal-delay="2">{{ d.portfolio_preview.subtitle }}</p>
+      </div>
+      <div data-reveal data-reveal-delay="3">
+        <a href="{{ d.portfolio_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.portfolio_preview.cta.label }}</a>
+      </div>
+    </div>
+
+    <div class="portfolio-featured-grid" data-reveal>
+      {% for project in featured_projects limit: 4 %}
+        {% include components/portfolio-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VALEURS — Mon approche
+     ============================================================ -->
+<section class="section-values section" aria-labelledby="values-title">
+  <div class="container">
+    <p class="section-label" data-reveal>{{ d.values.label }}</p>
+    <h2 class="section-title" id="values-title" data-reveal data-reveal-delay="1">{{ d.values.title }}</h2>
+    <div class="values-grid">
+      {% for item in d.values.items %}
+      <div class="value-item" data-reveal data-reveal-delay="{{ forloop.index }}">
+        <div class="value-item__number" aria-hidden="true">{{ item.number }}</div>
+        <h3 class="value-item__title">{{ item.title }}</h3>
+        <p class="value-item__text">{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS
+     ============================================================ -->
+<section class="section-stats section--sm" aria-label="Chiffres clés">
+  <div class="container">
+    <div class="stats-grid">
+      {% for stat in d.stats.items %}
+      <div class="stat-item" data-reveal data-reveal-delay="{{ forloop.index }}">
+        <span class="stat-item__value">{{ stat.value }}</span>
+        <span class="stat-item__label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TÉMOIGNAGES — Aperçu
+     ============================================================ -->
+{% assign testimonials = site.data.testimonials %}
+{% assign featured_testimonials = testimonials.testimonials | where: "featured", true %}
+<section class="section-testimonials-preview section" aria-labelledby="testimonials-preview-title">
+  <div class="container">
+    <p class="section-label text-center" data-reveal>{{ d.testimonial_preview.label }}</p>
+    <h2 class="section-title text-center" id="testimonials-preview-title" data-reveal data-reveal-delay="1">{{ d.testimonial_preview.title }}</h2>
+
+    <div class="testimonials-preview-grid">
+      {% for t in featured_testimonials limit: 3 %}
+      <div data-reveal data-reveal-delay="{{ forloop.index }}">
+        {% include components/testimonial-card.html testimonial=t short=true %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: 3rem;" data-reveal>
+      <a href="{{ d.testimonial_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.testimonial_preview.cta.label }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+{% include components/cta-banner.html data=d.cta_banner %}

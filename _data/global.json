@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "DJfilm",
+    "tagline": "L'Art de Filmer Votre Histoire",
+    "founded": "2018",
+    "location": "Agen, Lot-et-Garonne",
+    "region": "Nouvelle-Aquitaine",
+    "description": "Vidéaste professionnel basé à Agen, spécialisé dans les films de mariage, les productions d'entreprise et les contenus audiovisuels premium."
+  },
+  "contact": {
+    "phone": "06 12 34 56 78",
+    "phone_raw": "+33612345678",
+    "email": "contact@djfilm.fr",
+    "address": {
+      "city": "Agen",
+      "postal_code": "47000",
+      "department": "Lot-et-Garonne",
+      "department_code": "47",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR"
+    },
+    "availability": "Disponible du lundi au vendredi, 9h–19h"
+  },
+  "social": {
+    "instagram": {
+      "url": "https://instagram.com/djfilm_agen",
+      "handle": "@djfilm_agen",
+      "label": "Instagram"
+    },
+    "vimeo": {
+      "url": "https://vimeo.com/djfilm",
+      "handle": "djfilm",
+      "label": "Vimeo"
+    },
+    "linkedin": {
+      "url": "https://linkedin.com/company/djfilm-agen",
+      "label": "LinkedIn"
+    },
+    "youtube": {
+      "url": "https://youtube.com/@djfilm",
+      "handle": "@djfilm",
+      "label": "YouTube"
+    }
+  },
+  "seo": {
+    "title_suffix": " | DJfilm Agen",
+    "default_image": "/assets/images/og-default.jpg",
+    "twitter_handle": "@djfilm_agen",
+    "keywords": [
+      "vidéaste Agen",
+      "vidéaste mariage Agen",
+      "vidéo mariage Lot-et-Garonne",
+      "film d'entreprise Agen",
+      "vidéaste professionnel 47",
+      "vidéaste Nouvelle-Aquitaine",
+      "captation événement Agen",
+      "production audiovisuelle Agen"
+    ]
+  },
+  "legal": {
+    "company_name": "DJfilm",
+    "legal_form": "Entreprise individuelle",
+    "siret": "XXX XXX XXX 00000",
+    "tva": "FR XX XXX XXX XXX",
+    "rcs": "Agen",
+    "host": {
+      "name": "GitHub, Inc.",
+      "address": "88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis",
+      "website": "https://github.com"
+    }
+  }
+}

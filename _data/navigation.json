@@ -1,0 +1,76 @@
+{
+  "main": [
+    {
+      "label": "Accueil",
+      "url": "/",
+      "id": "home"
+    },
+    {
+      "label": "Portfolio",
+      "url": "/portfolio/",
+      "id": "portfolio"
+    },
+    {
+      "label": "Services",
+      "url": "/services/",
+      "id": "services"
+    },
+    {
+      "label": "À propos",
+      "url": "/a-propos/",
+      "id": "about"
+    },
+    {
+      "label": "Témoignages",
+      "url": "/temoignages/",
+      "id": "testimonials"
+    },
+    {
+      "label": "FAQ",
+      "url": "/faq/",
+      "id": "faq"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/",
+      "id": "contact",
+      "cta": true
+    }
+  ],
+  "footer_legal": [
+    {
+      "label": "Mentions légales",
+      "url": "/mentions-legales/"
+    },
+    {
+      "label": "Politique de confidentialité",
+      "url": "/politique-de-confidentialite/"
+    }
+  ],
+  "footer_nav": [
+    {
+      "label": "Portfolio",
+      "url": "/portfolio/"
+    },
+    {
+      "label": "Services",
+      "url": "/services/"
+    },
+    {
+      "label": "À propos",
+      "url": "/a-propos/"
+    },
+    {
+      "label": "Témoignages",
+      "url": "/temoignages/"
+    },
+    {
+      "label": "FAQ",
+      "url": "/faq/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
+    }
+  ]
+}

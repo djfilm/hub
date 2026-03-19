@@ -1,0 +1,66 @@
+---
+layout: page
+page_id: portfolio
+permalink: /portfolio/
+seo_title: "Portfolio Vidéaste Agen — Films de Mariage & Entreprise | DJfilm"
+seo_description: "Découvrez le portfolio de DJfilm, vidéaste professionnel à Agen. Films de mariage, productions d'entreprise, événements et publicités en Lot-et-Garonne."
+og_image: "/assets/images/og-portfolio.jpg"
+keywords:
+  - portfolio vidéaste Agen
+  - film mariage Lot-et-Garonne
+  - vidéo entreprise Agen
+  - réalisations audiovisuelles 47
+breadcrumbs:
+  - name: "Portfolio"
+    url: "/portfolio/"
+---
+
+{% assign d = site.data.portfolio %}
+
+<!-- Hero -->
+{% include components/page-hero.html label=d.hero.label title=d.hero.title subtitle=d.hero.subtitle %}
+
+<!-- Portfolio complet -->
+<section class="section-portfolio section" aria-labelledby="portfolio-title">
+  <div class="container">
+
+    <h2 class="sr-only" id="portfolio-title">Toutes les réalisations</h2>
+
+    <!-- Filtres -->
+    <nav class="portfolio-filters" aria-label="Filtrer par catégorie" data-reveal>
+      {% for filter in d.filters %}
+      <button
+        class="filter-btn{% if filter.id == 'all' %} is-active{% endif %}"
+        data-filter="{{ filter.id }}"
+        type="button"
+        aria-pressed="{% if filter.id == 'all' %}true{% else %}false{% endif %}"
+      >{{ filter.label }}</button>
+      {% endfor %}
+    </nav>
+
+    <!-- Grille projets -->
+    <div class="portfolio-grid" id="portfolio-grid" aria-live="polite">
+      {% for project in d.projects %}
+      <div data-reveal data-reveal-delay="{{ forloop.index | modulo: 3 | plus: 1 }}">
+        {% include components/portfolio-card.html project=project %}
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+{% assign cta_data = d.cta %}
+{% assign cta_banner = "" | split: "" %}
+{% capture cta_obj %}{"label":"","title":"{{ cta_data.title }}","text":"{{ cta_data.text }}","cta_primary":{"label":"{{ cta_data.cta.label }}","url":"{{ cta_data.cta.url }}"}}{% endcapture %}
+
+<section class="cta-banner section" aria-label="Appel à l'action">
+  <div class="cta-banner__inner container text-center">
+    <h2 class="cta-banner__title" data-reveal>{{ d.cta.title }}</h2>
+    <p class="cta-banner__text" data-reveal data-reveal-delay="1">{{ d.cta.text }}</p>
+    <div class="cta-banner__actions" data-reveal data-reveal-delay="2">
+      <a href="{{ d.cta.cta.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.cta.cta.label }}</a>
+    </div>
+  </div>
+</section>

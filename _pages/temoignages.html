@@ -1,0 +1,59 @@
+---
+layout: page
+page_id: testimonials
+permalink: /temoignages/
+seo_title: "Témoignages Clients — DJfilm Vidéaste Agen | Avis Mariages & Entreprises"
+seo_description: "Découvrez les témoignages de clients de DJfilm, vidéaste à Agen. Avis sur les films de mariage, productions d'entreprise et événements en Lot-et-Garonne."
+og_image: "/assets/images/og-testimonials.jpg"
+keywords:
+  - avis vidéaste Agen
+  - témoignages film mariage Lot-et-Garonne
+  - clients DJfilm
+breadcrumbs:
+  - name: "Témoignages"
+    url: "/temoignages/"
+---
+
+{% assign d = site.data.testimonials %}
+
+<!-- Hero -->
+{% include components/page-hero.html label=d.hero.label title=d.hero.title subtitle=d.hero.subtitle %}
+
+<!-- Témoignages -->
+<section class="section-testimonials section" aria-labelledby="temoignages-title">
+  <div class="container">
+
+    <h2 class="sr-only" id="temoignages-title">Tous les témoignages</h2>
+
+    <!-- Stats -->
+    <div class="testimonials-stats" data-reveal>
+      {% for stat in d.stats %}
+      <div class="testimonials-stat">
+        <span class="testimonials-stat__value">{{ stat.value }}</span>
+        <span class="testimonials-stat__label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Grille -->
+    <div class="testimonials-grid">
+      {% for t in d.testimonials %}
+      <div data-reveal data-reveal-delay="{{ forloop.index | modulo: 3 | plus: 1 }}">
+        {% include components/testimonial-card.html testimonial=t short=false %}
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner section" aria-labelledby="temoignages-cta-title">
+  <div class="cta-banner__inner container text-center">
+    <h2 class="cta-banner__title" id="temoignages-cta-title" data-reveal>{{ d.cta.title }}</h2>
+    <p class="cta-banner__text" data-reveal data-reveal-delay="1">{{ d.cta.text }}</p>
+    <div class="cta-banner__actions" data-reveal data-reveal-delay="2">
+      <a href="{{ d.cta.cta.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.cta.cta.label }}</a>
+    </div>
+  </div>
+</section>

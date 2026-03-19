@@ -1,0 +1,51 @@
+<!-- ============================================================
+     components/portfolio-card.html — Carte projet portfolio
+     Usage : include components/portfolio-card.html project=project
+     ============================================================ -->
+{% assign p = include.project %}
+
+<article
+  class="portfolio-card"
+  data-category="{{ p.category }}"
+  aria-label="{{ p.title }} — {{ p.category_label }}"
+>
+  <a href="{{ p.video_url }}" class="portfolio-card__link" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+    <div class="portfolio-card__media">
+      <img
+        src="{{ p.thumbnail | relative_url }}"
+        alt="{{ p.thumbnail_alt }}"
+        class="portfolio-card__img"
+        loading="lazy"
+        decoding="async"
+        width="600"
+        height="400"
+      >
+      <div class="portfolio-card__overlay" aria-hidden="true">
+        <span class="portfolio-card__play">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </span>
+        {% if p.duration %}
+        <span class="portfolio-card__duration">{{ p.duration }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+  <div class="portfolio-card__body">
+    <div class="portfolio-card__meta">
+      <span class="portfolio-card__category">{{ p.category_label }}</span>
+      {% if p.date_label %}
+      <span class="portfolio-card__date">{{ p.date_label }}</span>
+      {% endif %}
+    </div>
+    <h3 class="portfolio-card__title">
+      <a href="{{ p.video_url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a>
+    </h3>
+    {% if p.location %}
+    <p class="portfolio-card__location">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      {{ p.location }}
+    </p>
+    {% endif %}
+    <p class="portfolio-card__desc">{{ p.description | truncate: 120 }}</p>
+  </div>
+</article>

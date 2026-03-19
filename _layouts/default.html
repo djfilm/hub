@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'fr' }}" dir="ltr">
+<head>
+  {% include head.html %}
+  {% include seo-meta.html %}
+  {% include schema.html %}
+</head>
+<body class="{% if page.body_class %}{{ page.body_class }}{% endif %}" data-page="{{ page.page_id | default: '' }}">
+
+  <!-- Fond vivant — orbes lumineux organiques -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-orb bg-orb--4"></div>
+    <div class="bg-orb bg-orb--5"></div>
+  </div>
+
+  {% include header.html %}
+
+  <main id="main-content" tabindex="-1">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+</html>

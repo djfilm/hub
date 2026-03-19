@@ -1,0 +1,24 @@
+<!-- ============================================================
+     components/faq-item.html — Question/Réponse accordéon
+     Usage : include components/faq-item.html item=item
+     ============================================================ -->
+{% assign item = include.item %}
+
+<div class="faq-item" id="faq-{{ item.id }}">
+  <div class="faq-item__question">
+    <button
+      class="faq-item__toggle"
+      aria-expanded="false"
+      aria-controls="faq-answer-{{ item.id }}"
+      type="button"
+    >
+      <span>{{ item.question }}</span>
+      <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+  <div class="faq-item__answer" id="faq-answer-{{ item.id }}" hidden>
+    <div class="faq-item__answer-inner">
+      {{ item.answer | markdownify }}
+    </div>
+  </div>
+</div>

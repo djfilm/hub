@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Contact — DJfilm Vidéaste Agen | Devis Gratuit sous 48h",
+    "description": "Contactez DJfilm, vidéaste professionnel à Agen. Devis gratuit sous 48h pour vos films de mariage, productions d'entreprise et événements en Lot-et-Garonne.",
+    "og_image": "/assets/images/og-contact.jpg"
+  },
+  "hero": {
+    "label": "Contact",
+    "title": "Discutons de\nvotre projet",
+    "subtitle": "Premier échange gratuit — réponse sous 48h."
+  },
+  "intro": {
+    "title": "Prêt à donner vie\nà votre projet ?",
+    "text": "Que ce soit pour un mariage, une production d'entreprise ou un événement, je suis là pour répondre à vos questions et vous proposer un devis adapté à vos besoins."
+  },
+  "channels": [
+    {
+      "id": "phone",
+      "icon": "phone",
+      "label": "Par téléphone",
+      "value": "06 12 34 56 78",
+      "url": "tel:+33612345678",
+      "detail": "Du lundi au vendredi, 9h–19h"
+    },
+    {
+      "id": "email",
+      "icon": "mail",
+      "label": "Par e-mail",
+      "value": "contact@djfilm.fr",
+      "url": "mailto:contact@djfilm.fr",
+      "detail": "Réponse sous 48h ouvrées"
+    },
+    {
+      "id": "location",
+      "icon": "map-pin",
+      "label": "Basé à",
+      "value": "Agen, Lot-et-Garonne (47)",
+      "url": null,
+      "detail": "Déplacements sur toute la Nouvelle-Aquitaine et France"
+    }
+  ],
+  "form": {
+    "action": "https://formspree.io/f/VOTRE_ID_FORMSPREE",
+    "method": "POST",
+    "fields": [
+      {
+        "id": "name",
+        "type": "text",
+        "label": "Votre nom",
+        "placeholder": "Sophie & Thomas Dupont",
+        "required": true,
+        "autocomplete": "name"
+      },
+      {
+        "id": "email",
+        "type": "email",
+        "label": "Votre e-mail",
+        "placeholder": "votre@email.fr",
+        "required": true,
+        "autocomplete": "email"
+      },
+      {
+        "id": "phone",
+        "type": "tel",
+        "label": "Votre téléphone (optionnel)",
+        "placeholder": "06 XX XX XX XX",
+        "required": false,
+        "autocomplete": "tel"
+      },
+      {
+        "id": "service",
+        "type": "select",
+        "label": "Type de prestation",
+        "required": true,
+        "options": [
+          { "value": "", "label": "Sélectionnez une prestation" },
+          { "value": "mariage", "label": "Film de mariage" },
+          { "value": "entreprise", "label": "Film d'entreprise" },
+          { "value": "evenement", "label": "Captation d'événement" },
+          { "value": "publicite", "label": "Publicité & contenus" },
+          { "value": "seminaire", "label": "Séminaire" },
+          { "value": "autre", "label": "Autre projet" }
+        ]
+      },
+      {
+        "id": "date",
+        "type": "text",
+        "label": "Date de l'événement (si connue)",
+        "placeholder": "15 juin 2025",
+        "required": false
+      },
+      {
+        "id": "message",
+        "type": "textarea",
+        "label": "Votre message",
+        "placeholder": "Décrivez brièvement votre projet — lieu, style souhaité, budget approximatif...",
+        "required": true,
+        "rows": 6
+      }
+    ],
+    "submit_label": "Envoyer ma demande",
+    "success_message": "Merci pour votre message ! Je vous répondrai sous 48h.",
+    "error_message": "Une erreur est survenue. Merci de me contacter directement par e-mail."
+  },
+  "availability": {
+    "title": "Disponibilité & délais",
+    "text": "Je travaille sur devis et réserve les dates au fur et à mesure. Pour les mariages, je recommande de prendre contact au minimum 6 à 12 mois à l'avance. Pour les projets d'entreprise, 4 à 6 semaines suffisent généralement.",
+    "note": "Les dates sont réservées définitivement après signature du contrat et versement de l'acompte."
+  }
+}

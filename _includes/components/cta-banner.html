@@ -1,0 +1,25 @@
+<!-- ============================================================
+     components/cta-banner.html — Bandeau CTA réutilisable
+     Usage : include components/cta-banner.html data=site.data.home.cta_banner
+     ============================================================ -->
+{% assign cta = include.data %}
+
+<section class="cta-banner section" aria-labelledby="cta-banner-title">
+  <div class="cta-banner__inner container">
+    {% if cta.label %}
+    <p class="section-label">{{ cta.label }}</p>
+    {% endif %}
+    <h2 class="cta-banner__title" id="cta-banner-title">{{ cta.title }}</h2>
+    {% if cta.text %}
+    <p class="cta-banner__text">{{ cta.text }}</p>
+    {% endif %}
+    <div class="cta-banner__actions">
+      {% if cta.cta_primary %}
+      <a href="{{ cta.cta_primary.url | relative_url }}" class="btn btn--gold">{{ cta.cta_primary.label }}</a>
+      {% endif %}
+      {% if cta.cta_secondary %}
+      <a href="{{ cta.cta_secondary.url }}" class="btn btn--ghost">{{ cta.cta_secondary.label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

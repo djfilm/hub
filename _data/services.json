@@ -1,0 +1,209 @@
+{
+  "seo": {
+    "title": "Services Vidéaste Agen — Mariage, Entreprise, Événement | DJfilm",
+    "description": "Découvrez les services de DJfilm, vidéaste à Agen : films de mariage, productions d'entreprise, captation d'événements, publicités et séminaires en Lot-et-Garonne.",
+    "og_image": "/assets/images/og-services.jpg"
+  },
+  "hero": {
+    "label": "Services",
+    "title": "Chaque projet,\nune approche sur-mesure",
+    "subtitle": "Du film de mariage à la campagne publicitaire — je m'adapte à chaque histoire pour en extraire l'essentiel."
+  },
+  "intro": {
+    "title": "Un accompagnement complet,\nde la conception à la livraison",
+    "text": "Quelle que soit la nature de votre projet, je vous accompagne à chaque étape avec rigueur et sensibilité. De la prise de brief initiale jusqu'à la livraison des fichiers finaux, chaque production est traitée avec le même niveau d'exigence."
+  },
+  "services": [
+    {
+      "id": "mariage",
+      "icon": "rings",
+      "number": "01",
+      "title": "Film de Mariage",
+      "subtitle": "Cinématique & Émotionnel",
+      "tagline": "Votre plus beau jour, raconté pour toujours",
+      "description": "Le mariage est l'un des moments les plus intenses et précieux de votre vie. Je m'efface pour être un témoin discret et attentif, capturant les regards échangés, les rires spontanés, les larmes retenues — tout ce qui fait que votre journée est unique.",
+      "features": [
+        "Film principal cinématographique (5 à 15 min)",
+        "Clip court réseaux sociaux (60 à 90 sec)",
+        "Captation complète de la journée",
+        "Son soigné : discours, musique live, ambiances",
+        "Étalonnage colorimétrique sur-mesure",
+        "Livraison en HD & 4K",
+        "Accès privé à votre galerie en ligne",
+        "Déplacement inclus dans un rayon de 100 km d'Agen"
+      ],
+      "process": [
+        "Appel découverte gratuit",
+        "Rencontre préparatoire avant le jour J",
+        "Tournage le jour du mariage",
+        "Montage & post-production (4 à 6 semaines)",
+        "Présentation du montage et retouches",
+        "Livraison des fichiers définitifs"
+      ],
+      "thumbnail": "/assets/images/services/service-mariage.jpg",
+      "thumbnail_alt": "Film de mariage cinématographique par DJfilm Agen",
+      "cta": {
+        "label": "Réserver ma date",
+        "url": "/contact/?service=mariage"
+      },
+      "zone": "Agen, Lot-et-Garonne, Nouvelle-Aquitaine et France entière",
+      "keywords": ["vidéaste mariage Agen", "film mariage Lot-et-Garonne", "film mariage 47"]
+    },
+    {
+      "id": "entreprise",
+      "icon": "briefcase",
+      "number": "02",
+      "title": "Film d'Entreprise",
+      "subtitle": "Institutionnel & Image de Marque",
+      "tagline": "Votre identité, filmée avec précision",
+      "description": "Un film d'entreprise bien réalisé est l'un des outils de communication les plus puissants. Il humanise votre marque, inspire confiance et génère de l'engagement. Je travaille avec vous pour créer un contenu qui reflète fidèlement vos valeurs et vos ambitions.",
+      "features": [
+        "Film institutionnel (2 à 5 min)",
+        "Témoignages clients et collaborateurs",
+        "Présentation de produits ou de services",
+        "Interviews dirigeants et équipes",
+        "Motion design & infographies (option)",
+        "Déclinaisons réseaux sociaux",
+        "Voix off professionnelle (option)",
+        "Sous-titrage (option)"
+      ],
+      "process": [
+        "Brief & définition des objectifs",
+        "Écriture du scénario et story-board",
+        "Pré-production & repérage",
+        "Tournage (1 à 2 jours selon projet)",
+        "Montage, étalonnage & post-production",
+        "Validation et livraison"
+      ],
+      "thumbnail": "/assets/images/services/service-entreprise.jpg",
+      "thumbnail_alt": "Film d'entreprise professionnel par DJfilm Agen",
+      "cta": {
+        "label": "Demander un devis",
+        "url": "/contact/?service=entreprise"
+      },
+      "zone": "Agen, Lot-et-Garonne, Gironde, Toulouse et alentours",
+      "keywords": ["film entreprise Agen", "vidéo corporate Agen", "production audiovisuelle Agen"]
+    },
+    {
+      "id": "evenement",
+      "icon": "camera",
+      "number": "03",
+      "title": "Captation d'Événement",
+      "subtitle": "Conférences · Galas · Concerts",
+      "tagline": "L'énergie du direct, la qualité du cinéma",
+      "description": "Conférences professionnelles, galas, concerts, remises de prix — je capture l'énergie et les moments clés de vos événements avec réactivité et précision. Le résultat : un film qui prolonge la vie de votre événement bien au-delà du jour J.",
+      "features": [
+        "Multi-caméras (jusqu'à 3 caméras)",
+        "Captation du discours et des temps forts",
+        "Interviews à chaud des participants",
+        "Film de synthèse (2 à 6 min)",
+        "Teaser réseaux sociaux livré rapidement",
+        "Prestation en soirée possible",
+        "Diffusion live (option)"
+      ],
+      "process": [
+        "Échange sur le programme et les moments clés",
+        "Repérage du lieu",
+        "Tournage le jour de l'événement",
+        "Montage express ou standard selon besoin",
+        "Livraison des fichiers"
+      ],
+      "thumbnail": "/assets/images/services/service-evenement.jpg",
+      "thumbnail_alt": "Captation d'événement professionnel par DJfilm Agen",
+      "cta": {
+        "label": "Discuter de votre événement",
+        "url": "/contact/?service=evenement"
+      },
+      "zone": "Agen et toute la Nouvelle-Aquitaine",
+      "keywords": ["captation événement Agen", "vidéo conférence Agen", "filmage événement 47"]
+    },
+    {
+      "id": "publicite",
+      "icon": "play",
+      "number": "04",
+      "title": "Publicité & Contenus",
+      "subtitle": "Spots · Réseaux Sociaux · Campagnes",
+      "tagline": "Des contenus qui captivent et convertissent",
+      "description": "À l'ère du tout-vidéo, vos contenus doivent se démarquer. Je réalise des spots publicitaires percutants, des vidéos réseaux sociaux engageantes et des campagnes digitales mémorables — pensés pour votre audience et optimisés pour chaque plateforme.",
+      "features": [
+        "Spot TV et web (15 à 60 sec)",
+        "Contenus Instagram, TikTok, YouTube",
+        "Concept créatif et script",
+        "Réalisation & direction artistique",
+        "Motion design et titre animés",
+        "Musique sous licence (royalty-free)",
+        "Déclinaisons multi-formats",
+        "Optimisation pour chaque plateforme"
+      ],
+      "process": [
+        "Définition de la cible et des objectifs",
+        "Création du concept créatif",
+        "Tournage en 1 journée",
+        "Post-production & motion design",
+        "Revues et ajustements",
+        "Livraison multi-formats"
+      ],
+      "thumbnail": "/assets/images/services/service-publicite.jpg",
+      "thumbnail_alt": "Production publicitaire et contenu vidéo par DJfilm Agen",
+      "cta": {
+        "label": "Lancer un projet pub",
+        "url": "/contact/?service=publicite"
+      },
+      "zone": "France entière, production délocalisée possible",
+      "keywords": ["spot publicitaire Agen", "vidéo réseaux sociaux Agen", "production vidéo pub 47"]
+    },
+    {
+      "id": "seminaire",
+      "icon": "users",
+      "number": "05",
+      "title": "Séminaire d'Entreprise",
+      "subtitle": "Team Building · Conventions · Formations",
+      "tagline": "Valorisez vos moments d'équipe",
+      "description": "Le séminaire d'entreprise est un moment fort de cohésion et de stratégie. Je vous aide à en garder une trace précieuse : un film qui reflète l'ambiance, les échanges et les décisions, à partager en interne ou en externe.",
+      "features": [
+        "Captation des plénières et ateliers",
+        "Film de synthèse complet (3 à 8 min)",
+        "Portrait des intervenants",
+        "Moments de convivialité et networking",
+        "Teaser ou aftermovie (1 à 2 min)",
+        "Discrétion et réactivité garanties",
+        "Livraison rapide (5 à 10 jours)"
+      ],
+      "process": [
+        "Échange sur le programme et les attentes",
+        "Participation à tout ou partie du séminaire",
+        "Montage et étalonnage",
+        "Présentation du montage",
+        "Livraison"
+      ],
+      "thumbnail": "/assets/images/services/service-seminaire.jpg",
+      "thumbnail_alt": "Captation de séminaire d'entreprise par DJfilm Agen",
+      "cta": {
+        "label": "Organiser ma captation",
+        "url": "/contact/?service=seminaire"
+      },
+      "zone": "Agen, Bordeaux, Toulouse et toute la France",
+      "keywords": ["vidéo séminaire Agen", "captation séminaire Lot-et-Garonne", "film corporate séminaire"]
+    }
+  ],
+  "equipment": {
+    "label": "Équipement",
+    "title": "Un matériel professionnel\npour un rendu premium",
+    "items": [
+      { "category": "Caméras", "detail": "Sony FX3, Sony A7 IV — captation 4K cinématique" },
+      { "category": "Optiques", "detail": "Gamme de focales fixes Sigma Art, Tamron — bokeh et piqué maîtrisés" },
+      { "category": "Stabilisation", "detail": "DJI RS 3 Pro gimbal — fluidité des plans en mouvement" },
+      { "category": "Drone", "detail": "DJI Mavic 3 — plans aériens cinématiques (brevet de télépilote)" },
+      { "category": "Son", "detail": "Micros Rode et Sennheiser — captation vocale et ambiance de qualité broadcast" },
+      { "category": "Éclairage", "detail": "Panneaux LED Aputure — maîtrise de la lumière en intérieur" }
+    ]
+  },
+  "cta": {
+    "title": "Parlons de votre projet",
+    "text": "Devis gratuit sous 48h. Disponible en Lot-et-Garonne, Nouvelle-Aquitaine et toute la France.",
+    "cta": {
+      "label": "Demander un devis gratuit",
+      "url": "/contact/"
+    }
+  }
+}

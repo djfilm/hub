@@ -1,0 +1,20 @@
+<!-- ============================================================
+     components/service-card.html — Carte service (version compacte)
+     Usage : include components/service-card.html service=service
+     ============================================================ -->
+{% assign s = include.service %}
+
+<article class="service-card" id="{{ s.id }}" aria-labelledby="service-title-{{ s.id }}">
+  <div class="service-card__number" aria-hidden="true">{{ s.number }}</div>
+  <div class="service-card__body">
+    <h3 class="service-card__title" id="service-title-{{ s.id }}">{{ s.title }}</h3>
+    <p class="service-card__subtitle">{{ s.subtitle }}</p>
+    <p class="service-card__desc">{{ s.description }}</p>
+    {% if s.cta %}
+    <a href="{{ s.cta.url | relative_url }}" class="service-card__cta">
+      {{ s.cta.label }}
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    {% endif %}
+  </div>
+</article>
