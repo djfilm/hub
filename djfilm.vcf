@@ -1,16 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Djibril Diallo — DJfilm
-N:Diallo;Djibril;;;
+FN:Damien JOYEUX - DJfilm
+N:JOYEUX;Damien;;;
 ORG:DJfilm
-TITLE:Vidéaste professionnel
-TEL;TYPE=CELL:+33612345678
-EMAIL;TYPE=INTERNET:contact@djfilm.fr
-URL:https://djfilm.fr
+TITLE:Videaste professionnel
+EMAIL;TYPE=INTERNET:djfilm@outlook.fr
 ADR;TYPE=WORK:;;Agen;Lot-et-Garonne;47000;France
-X-SOCIALPROFILE;type=instagram:https://instagram.com/djfilm_agen
-X-SOCIALPROFILE;type=vimeo:https://vimeo.com/djfilm
-X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/company/djfilm-agen
-X-SOCIALPROFILE;type=youtube:https://youtube.com/@djfilm
-NOTE:Vidéaste professionnel basé à Agen (47). Films de mariage\, productions d'entreprise\, contenus audiovisuels premium. Disponible lun–ven\, 9h–19h.
+NOTE:Fichier minimal. La vCard complete est generee dynamiquement depuis assets/data/contact.json.
 END:VCARD

@@ -8,7 +8,7 @@
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://hub.djfilm.fr/">
+  <meta property="og:url"         content="" data-content-key="meta.ogUrl">
   <meta property="og:title"       content="DJfilm — Hub">
   <meta property="og:description" content="Vidéaste professionnel basé à Agen. Films de mariage, productions d'entreprise, contenus audiovisuels premium.">
   <meta property="og:image"       content="/assets/images/og-default.jpg">
@@ -19,39 +19,15 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" data-href-key="meta.fonts.googleApis">
+  <link rel="preconnect" data-href-key="meta.fonts.googleStatic" crossorigin>
+  <link rel="stylesheet" data-href-key="meta.fonts.stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/hub.css">
 
   <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Djibril Diallo",
-    "jobTitle": "Vidéaste professionnel",
-    "worksFor": { "@type": "Organization", "name": "DJfilm" },
-    "url": "https://djfilm.fr",
-    "email": "contact@djfilm.fr",
-    "telephone": "+33612345678",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Agen",
-      "postalCode": "47000",
-      "addressRegion": "Lot-et-Garonne",
-      "addressCountry": "FR"
-    },
-    "sameAs": [
-      "https://instagram.com/djfilm_agen",
-      "https://vimeo.com/djfilm",
-      "https://www.linkedin.com/company/djfilm-agen",
-      "https://youtube.com/@djfilm"
-    ]
-  }
-  </script>
+  <script type="application/ld+json" id="schema-data"></script>
 </head>
 <body>
 
@@ -105,7 +81,8 @@
       <nav class="links" aria-label="Liens principaux">
 
         <!-- Site principal — lien vedette -->
-        <a href="https://djfilm.fr"
+        <a href="#"
+           data-href-key="links.website"
            class="link-card link-card--featured"
            data-reveal data-delay="120"
            target="_blank" rel="noopener noreferrer">
@@ -126,7 +103,8 @@
         </a>
 
         <!-- Showreel Vimeo -->
-        <a href="https://vimeo.com/djfilm"
+        <a href="#"
+           data-href-key="links.showreel"
            class="link-card"
            data-reveal data-delay="200"
            target="_blank" rel="noopener noreferrer">
@@ -147,7 +125,8 @@
         </a>
 
         <!-- Devis -->
-        <a href="https://djfilm.fr/contact/"
+        <a href="#"
+           data-href-key="links.quote"
            class="link-card"
            data-reveal data-delay="280"
            target="_blank" rel="noopener noreferrer">
@@ -168,7 +147,8 @@
         </a>
 
         <!-- Email -->
-        <a href="mailto:contact@djfilm.fr"
+        <a href="#"
+           data-href-key="contacts.emailHref"
            class="link-card"
            data-reveal data-delay="360">
           <span class="link-card__icon" aria-hidden="true">
@@ -178,7 +158,7 @@
           </span>
           <span class="link-card__body">
             <span class="link-card__title">Envoyer un message</span>
-            <span class="link-card__sub">contact@djfilm.fr</span>
+            <span class="link-card__sub" data-text-key="contacts.email">djfilm@outlook.fr</span>
           </span>
           <span class="link-card__arrow" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -188,7 +168,8 @@
         </a>
 
         <!-- Phone -->
-        <a href="tel:+33612345678"
+        <a href="#"
+           data-href-key="contacts.phoneHref"
            class="link-card"
            data-reveal data-delay="440">
           <span class="link-card__icon" aria-hidden="true">
@@ -198,7 +179,7 @@
           </span>
           <span class="link-card__body">
             <span class="link-card__title">Téléphoner</span>
-            <span class="link-card__sub">06 12 34 56 78 · Lun–Ven, 9h–19h</span>
+            <span class="link-card__sub" data-text-key="contacts.phoneSubtitle">Disponibilite: Lun-Ven, 9h-18h</span>
           </span>
           <span class="link-card__arrow" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -208,7 +189,8 @@
         </a>
 
         <!-- vCard — style distinct -->
-        <a href="djfilm.vcf"
+        <a href="#"
+           data-vcard-download
            class="link-card link-card--vcard"
            data-reveal data-delay="520"
            download="DJfilm.vcf">
@@ -232,7 +214,8 @@
       <!-- ── Socials ── -->
       <div class="socials" data-reveal data-delay="640" role="list" aria-label="Réseaux sociaux">
 
-        <a href="https://instagram.com/djfilm_agen"
+        <a href="#"
+           data-href-key="links.instagram"
            class="social social--instagram"
            target="_blank" rel="noopener noreferrer"
            role="listitem" aria-label="Instagram — @djfilm_agen">
@@ -241,7 +224,8 @@
           </svg>
         </a>
 
-        <a href="https://vimeo.com/djfilm"
+        <a href="#"
+           data-href-key="links.showreel"
            class="social"
            target="_blank" rel="noopener noreferrer"
            role="listitem" aria-label="Vimeo — djfilm">
@@ -250,7 +234,8 @@
           </svg>
         </a>
 
-        <a href="https://www.linkedin.com/company/djfilm-agen"
+        <a href="#"
+           data-href-key="links.linkedinProfile"
            class="social"
            target="_blank" rel="noopener noreferrer"
            role="listitem" aria-label="LinkedIn — DJfilm">
@@ -259,7 +244,8 @@
           </svg>
         </a>
 
-        <a href="https://youtube.com/@djfilm"
+        <a href="#"
+           data-href-key="links.youtube"
            class="social"
            target="_blank" rel="noopener noreferrer"
            role="listitem" aria-label="YouTube — @djfilm">

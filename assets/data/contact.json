@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "ogUrl": "https://hub.djfilm.fr/",
+    "schemaContext": "https://schema.org",
+    "fonts": {
+      "googleApis": "https://fonts.googleapis.com",
+      "googleStatic": "https://fonts.gstatic.com",
+      "stylesheet": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    }
+  },
+  "contacts": {
+    "email": "djfilm@outlook.fr",
+    "emailHref": "mailto:djfilm@outlook.fr",
+    "phoneE164": "+33684881015",
+    "phoneHref": "tel:+33684881015",
+    "phoneDisplay": "06 84 88 10 15",
+    "phoneSubtitle": "06 84 88 10 15 - Lun-Ven, 9h-18h"
+  },
+  "links": {
+    "website": "https://djfilm.fr",
+    "showreel": "https://vimeo.com/djfilm",
+    "quote": "https://djfilm.fr/contact/",
+    "instagram": "https://instagram.com/djfilm_agen",
+    "linkedinProfile": "https://www.linkedin.com/in/damien-joyeux/",
+    "linkedinCompany": "https://www.linkedin.com/company/djfilm-agen",
+    "youtube": "https://youtube.com/@djfilm"
+  },
+  "schema": {
+    "url": "https://djfilm.fr",
+    "email": "contact@djfilm.fr",
+    "telephone": "+33612345678",
+    "sameAs": [
+      "https://instagram.com/djfilm_agen",
+      "https://vimeo.com/djfilm",
+      "https://www.linkedin.com/company/djfilm-agen",
+      "https://youtube.com/@djfilm"
+    ]
+  },
+  "vcard": {
+    "fileName": "DJfilm.vcf",
+    "fullName": "Damien JOYEUX - DJfilm",
+    "lastName": "JOYEUX",
+    "firstName": "Damien",
+    "organization": "DJfilm",
+    "title": "Videaste professionnel",
+    "addressLocality": "Agen",
+    "addressRegion": "Lot-et-Garonne",
+    "postalCode": "47000",
+    "country": "France",
+    "note": "Videaste professionnel base a Agen (47). Films de mariage, productions d'entreprise, contenus audiovisuels premium. Disponible lun-ven, 9h-18h."
+  }
+}
