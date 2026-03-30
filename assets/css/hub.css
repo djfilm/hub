@@ -190,9 +190,9 @@ a {
 /* Avatar container */
 .profile__avatar {
   position: relative;
-  width: 96px;
-  height: 96px;
-  margin-bottom: 1.5rem;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 1.25rem;
 }
 
 /* Rotating gradient ring */
@@ -600,8 +600,8 @@ a {
     font-size: 2.1rem;
   }
   .profile__avatar {
-    width: 82px;
-    height: 82px;
+    width: 130px;
+    height: 130px;
   }
   .link-card {
     padding: .9rem 1rem;
