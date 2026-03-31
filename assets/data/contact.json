@@ -24,7 +24,7 @@
     "linkedinProfile": "https://www.linkedin.com/in/damien-joyeux/",
     "linkedinCompany": "https://www.linkedin.com/company/djfilm-agen",
     "youtube": "https://youtube.com/@djfilm33",
-    "facebook": "https://facebook.com/djfilm33",
+    "facebook": "https://www.facebook.com/people/DJfilm",
     "tiktok": "https://tiktok.com/@djfilm37"
   },
   "schema": {
@@ -34,7 +34,10 @@
     "sameAs": [
       "https://instagram.com/djfilm33",
       "https://www.linkedin.com/company/djfilm-fr",
-      "https://youtube.com/@djfilm33"
+      "https://youtube.com/@djfilm33",
+      "https://www.facebook.com/people/DJfilm",
+      "https://tiktok.com/@djfilm37",
+      "https://www.linkedin.com/company/djfilm-agen"
     ]
   },
   "vcard": {
