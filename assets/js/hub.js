@@ -92,7 +92,7 @@ function buildVCard(data) {
     `EMAIL;TYPE=INTERNET:${escapeVCardValue(data.contacts.email)}`,
     `URL:${escapeVCardValue(data.links.website)}`,
     `ADR;TYPE=WORK:;;${escapeVCardValue(data.vcard.addressLocality)};${escapeVCardValue(data.vcard.addressRegion)};${escapeVCardValue(data.vcard.postalCode)};${escapeVCardValue(data.vcard.country)}`,
-    `X-SOCIALPROFILE;type=instagram:${escapeVCardValue(data.links.instagram)}`,
+    `X-SOCIALPROFILE;type=facebook:${escapeVCardValue(data.links.facebook)}`,
     `X-SOCIALPROFILE;type=vimeo:${escapeVCardValue(data.links.showreel)}`,
     `X-SOCIALPROFILE;type=linkedin:${escapeVCardValue(data.links.linkedinCompany)}`,
     `X-SOCIALPROFILE;type=youtube:${escapeVCardValue(data.links.youtube)}`,

@@ -20,11 +20,10 @@
     "website": "https://djfilm.fr",
     "showreel": "https://vimeo.com/djfilm",
     "quote": "https://djfilm.fr/contact/",
-    "instagram": "https://instagram.com/djfilm33",
     "linkedinProfile": "https://www.linkedin.com/in/damien-joyeux/",
     "linkedinCompany": "https://www.linkedin.com/company/djfilm-agen",
     "youtube": "https://youtube.com/@djfilm33",
-    "facebook": "https://www.facebook.com/people/DJfilm",
+    "facebook": "https://www.facebook.com/people/DJfilm/61575447843138/",
     "tiktok": "https://tiktok.com/@djfilm37"
   },
   "schema": {
@@ -32,10 +31,9 @@
     "email": "djfilm@outlook.fr.fr",
     "telephone": "+33684881015",
     "sameAs": [
-      "https://instagram.com/djfilm33",
       "https://www.linkedin.com/company/djfilm-fr",
       "https://youtube.com/@djfilm33",
-      "https://www.facebook.com/people/DJfilm",
+      "https://www.facebook.com/people/DJfilm/61575447843138/",
       "https://tiktok.com/@djfilm37",
       "https://www.linkedin.com/company/djfilm-agen"
     ]
