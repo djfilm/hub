@@ -547,13 +547,7 @@ a {
   box-shadow: 0 8px 24px rgba(225, 48, 108, .42);
 }
 
-.social--tiktok {
-  background: #010101;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, .24);
-}
-.social--tiktok:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .36);
-}
+
 
 /* ── 10. Footer ─────────────────────────────────────────────── */
 .hub-footer {
